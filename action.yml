@@ -1,0 +1,16 @@
+name: 'Store Secret'
+description: 'Store a value into a repository secret'
+branding:
+  color: purple
+  icon: terminal
+inputs:
+  name:
+    description: 'name of secret to create or update'
+    required: true
+  value:
+    description: 'value to set'
+    required: true
+
+runs:
+  using: 'node12'
+  main: 'index.js'
