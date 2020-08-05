@@ -1,0 +1,32 @@
+{
+  "name": "store-secret",
+  "version": "1.0.0",
+  "description": "Store Secret GitHub Action",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremyd2019/store-secret.git"
+  },
+  "scripts": {
+    "pkg": "ncc build main.js -m -o ./",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "GitHub",
+    "Actions",
+    "Secrets"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeremyd2019/store-secret/issues"
+  },
+  "homepage": "https://github.com/jeremyd2019/store-secret",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^4.0.0",
+    "tweetsodium": "^0.0.5"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.3",
+    "eslint": "^7.6.0"
+  }
+}
