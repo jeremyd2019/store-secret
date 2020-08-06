@@ -5,7 +5,7 @@
 ```yaml
   - uses: jeremyd2019/store-secret
     env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+      GITHUB_TOKEN: ${{ secrets.GITHUB_PAT }} # The token provided by Actions doesn't work with the secrets api, you need to create your own token with either repo or public_repo scope
     with:
       name: mysecret
       value: supersecretvalue
